@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home page</title>
+        <style>
+
+            #row1, #row2 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #portfolio {
+                background-color: #3949FC;
+            }
+
+            #hobbies {
+                background-color:#43a047;
+            }
+
+            #Work {
+                background-color:#FB8C04;
+            }
+
+            #other {
+                background-color:#673AD1;
+            }
+
+            #home a {
+                margin: 20px;
+                padding: 12px;
+                width: 200px;
+                height: 200px;
+                text-decoration: none;
+                border: 2px solid #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            p {
+                color: #e0f7fa;
+                font-size: 20px;
+                font-family: "Ink Free", Times, serif;
+                text-align: center;
+            }
+
+            #home a:hover, #me:hover {
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 19px 38px, rgba(0, 0, 0, 0.21) 0px 15px 12px;
+            } 
+
+            #me {
+                display: block;
+                margin: 20px auto;
+                width: 400px;
+                border: 2px solid #ccc;
+            }
+
+            .icon {
+                width: 100px;
+            }
+
+            #footer {
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 19px 38px, rgba(0, 0, 0, 0.21) 0px 15px 12px;
+                background-color: #6694BB;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+            }
+
+            #col1 {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            #col2 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            #col1 a {
+                display: block;
+                font-weight: bold;
+                font-size: 18px;
+                margin: 0 10px;
+                padding: 10px;
+                color: #ccc;
+                text-decoration: none;
+            }
+
+            #col1 a:hover {
+                background-color: #79555F;
+            }
+
+            #col2 a {
+                display: block;
+                margin: 15px;
+            }
+
+            .footerIcon {
+                width: 60px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="home">
+            <div id="row1">
+                <a id="portfolio" href="portfolio.html"><p>My Portfolio</p><img class="icon" src="asset\portfolio.png"></a>
+                <a id="hobbies" href="hobbies.html"><p>My Hobbies</p><img class="icon" src="asset\hobbies.png"></a>
+            </div>
+            <div id="row2">
+                <a id="Work" class="lineBreak" href="Work.html"><p>My Work Experience</p><img class="icon" src="asset\Work.png"></a>
+                <a id="other" href="other.html"><p>Other</p><img class="icon" src="asset\other.png"></a>
+            </div>
+        </div>
+        <img id="me" src="asset\My_Picture.jpeg" title="Eric">
+        <p>Sham Shui Po Garden Hill<br>2020-08-28</p>
+        <div id="footer">
+            <div id="col1">
+                <a href="mailto:twheric22@gmail.com">CONTACT OWNER</a>
+                <a href="home.html">HOME</a>
+            </div>
+            <div id="col2">
+                <a href="https://www.instagram.com/twh_eric/" target="_blank"><img class="footerIcon" src="asset\instagram.png" title="Instagram"></a>
+                <a href="https://www.youtube.com/@turtlegaming9819" target="_blank"><img class="footerIcon" src="asset\youtube.png" title="Youtube"></a>
+                <a href="https://join.skype.com/invite/r1m0uLu66g4a" target="_blank"><img class="footerIcon" src="asset\skype.png" title="Skype"></a>
+                <a href="https://wa.me/59312767" target="_blank"><img class="footerIcon" src="asset\whatsapp.png" title="Whatsapp"></a>
+                <a href="mailto:twheric22@gmail.com" target="_blank"><img class="footerIcon" src="asset\mail.png" title="Gmail"></a>
+            </div>
+        </div>
+    </body>
+</html>

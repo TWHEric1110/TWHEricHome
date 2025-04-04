@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Other page</title>
+        <style>
+
+            body {
+                background-color: #BCA9C2;
+            }
+
+            h1, h3 {
+                font-family: "Gill Sans", sans-serif;
+            }
+
+            h1 {
+                margin-bottom: 4px;
+                text-align: center;
+                text-decoration: #000 underline;
+            }
+
+            #mainContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #tableContainer1, #tableContainer2 {
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            #tableContainer1 div, #tableContainer2 div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #tableContainer1 div {
+                width: 250px;
+                height: 340px;
+                border: 2px solid #ccc;
+            }
+
+            #tableContainer2 div {
+                width: 250px;
+                height: 190px;
+                border: 2px solid #ccc;
+            }
+
+            #t1, #t2, #t3, #t4 {
+                margin: 0 15px;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 19px 38px, rgba(0, 0, 0, 0.21) 0px 15px 12px;
+            }
+
+            #t1 {
+                background-color: #669496;
+            }
+
+            #t2 {
+                background-color:#9FA8F7;
+            }
+            
+            #t3 {
+                background-color: #c4aca3;
+            }
+
+            #t4 {
+                background-color: #795543;
+            }
+
+            table td{
+                padding: 0 10px 10px 10px;
+                text-decoration: #000 underline;
+            }
+
+            #footer {
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 19px 38px, rgba(0, 0, 0, 0.21) 0px 15px 12px;
+                background-color: #669496;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+            }
+
+            #col1 {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            #col2 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            #col1 a {
+                display: block;
+                font-weight: bold;
+                font-size: 18px;
+                margin: 0 10px;
+                padding: 10px;
+                color: #ccc;
+                text-decoration: none;
+            }
+
+            #col1 a:hover {
+                background-color: #79555F;
+            }
+
+            #col2 a {
+                display: block;
+                margin: 15px;
+            }
+
+            .footerIcon{
+                width: 60px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Other</h1>
+        <div id="mainContainer">
+            <div id="tableContainer1">
+                <div id="t1">
+                    <p>Programming Language</p>
+                    <table>
+                        <tr>
+                            <td>Python</td>
+                            <td>Familiar</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>C/C++</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td>Learning</td>
+                        </tr>
+                        <tr>
+                            <td>R</td>
+                            <td>Learning</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="t2">
+                    <p>Software Skills</p>
+                    <table>
+                        <tr>
+                            <td>Microsoft</td>
+                        </tr>
+                        <tr>
+                            <td>PowerPoint</td>
+                            <td>Proficient</td>
+                        </tr>
+                        <tr>
+                            <td>Word</td>
+                            <td>Proficient</td>
+                        </tr>
+                        <tr>
+                            <td>Excel</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Adobe</td>
+                        </tr>
+                        <tr>
+                            <td>audition</td>
+                            <td>Proficient</td>
+                        </tr>
+                        <tr>
+                            <td>Illustrator</td>
+                            <td>Proficient</td>
+                        </tr>
+                        <tr>
+                            <td>premiere pro</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Photoshop</td>
+                            <td>Basic</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="tableContainer2">
+                <div id="t3">
+                    <p>Languages</p>
+                    <table>
+                        <tr>
+                            <td>Cantonese</td>
+                            <td>Native</td>
+                        </tr>
+                        <tr>
+                            <td>Putonghua</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>Intermediate</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="t4">
+                    <p>Other Skills</p>
+                    <table>
+                        <tr>
+                            <td>Chinese typing</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>English typing</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Cisco setting</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>ChatGPT</td>
+                            <td>Basic</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div id="col1">
+                <a href="mailto:twheric22@gmail.com">CONTACT OWNER</a>
+                <a href="home.html">HOME</a>
+            </div>
+            <div id="col2">
+                <a href="https://www.instagram.com/twh_eric/" target="_blank"><img class="footerIcon" src="asset\instagram.png" title="Instagram"></a>
+                <a href="https://www.youtube.com/@turtlegaming9819" target="_blank"><img class="footerIcon" src="asset\youtube.png" title="Youtube"></a>
+                <a href="https://join.skype.com/invite/r1m0uLu66g4a" target="_blank"><img class="footerIcon" src="asset\skype.png" title="Skype"></a>
+                <a href="https://wa.me/59312767" target="_blank"><img class="footerIcon" src="asset\whatsapp.png" title="Whatsapp"></a>
+                <a href="mailto:twheric22@gmail.com" target="_blank"><img class="footerIcon" src="asset\mail.png" title="Gmail"></a>
+            </div>
+        </div>
+    </body>
+</html>

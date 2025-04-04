@@ -1,0 +1,181 @@
+* {
+    font-family: "Gill Sans", sans-serif;
+}
+
+body {
+    background-color:#607D92;
+    min-width: 930px;
+    margin: 0;
+}
+
+/* header */
+#header {
+    background-color:#F5F5E3;
+    padding: 12px;
+}
+
+#banner {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner div {
+    margin: auto 5px 0;
+}
+
+#nav-left, #nav-right{
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+#name {
+    text-align: right;
+}
+
+#name span {
+    position: relative;
+    font-size: 14px;
+    margin: 10px;
+}
+
+#banner a {
+    display: block;
+    padding: 5px;
+    margin: 5px; 
+    cursor: pointer;
+    text-decoration: none;
+    color: #3E2723;
+}
+
+#banner a:hover {
+    background-color:#A9A9A3 ;
+}
+
+#main {
+    width: 100%;
+    text-align: center;
+    height: 1400px;
+}
+
+iframe {
+    width: 60%;
+    height: 100%;
+    float:left;
+}
+
+#none {
+    width: 20%;
+    height: 100px;
+    float:left;
+}
+
+#audio {
+    width: 20%;
+    height: 100px;
+    float:left;
+}
+
+audio {
+    width: 95%;
+    height: 100px;
+}
+
+#audio p {
+    font-size: 14px;
+    margin-top: 2px;
+    padding: 5px;
+    text-align: center;
+    font-family: "Comic Sans MS", Times, serif;
+}
+
+#audio p span{
+    border-bottom: 1px solid #000;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+#toTop {
+    z-index: 999;
+    position: fixed;
+    bottom: 100px;
+    right: 70px;
+    background-color: #6694BB;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+}
+
+#toTop a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toTop img {
+    width: 80px;
+}
+
+/* menu bar */
+#menuBtn {
+    position: fixed;
+    font-size: 18px;
+    top: 33px;
+    left: 22px;
+    background-color: #c4aca3;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+#menuBtn:hover {
+    color: #fff;
+}
+
+#menuBar {
+    position: fixed;
+    top: 92px;
+    left: 5px;
+    width: 160px;
+    padding: 20px 5px;
+
+    background-color: #795548;
+    border: 2px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#menuBar a {
+    display: block;
+    margin: 5px 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #A9A9A3;
+    font-size: 24px;
+    font-family: "Microsoft Himalaya", Times, serif;
+}
+
+#menuBar a:hover {
+    color: #F5F5E3;
+}
+
+#footer {
+    width:100%;
+    background-color:#ffebee;
+    text-align:center;
+    font-size: 18px;
+    padding: 20px 0 10px;
+}

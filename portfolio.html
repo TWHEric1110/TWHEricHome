@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal portfolio page</title>
+        <style>
+            
+            body {
+                background-color: #6293bb;
+                padding: 0 15px;
+                height: 1160px;
+                margin: 0;
+                /* min-width: 920px; */
+            }
+
+            h1, h3 {
+                font-family: "Gill Sans", sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+                text-decoration: #000 underline;
+            }
+
+            h3 {
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 10px, rgba(0, 0, 0, 0.21) 0px 0px 0px;
+                padding: 16px 0 4px 8px;
+                background-color:#98afc16b;
+            }
+
+            table{
+                font-size: 16px;
+                font-weight: bold;
+                font-family: "Segoe Print", Times, serif;
+                table-layout: auto;
+                width: 100%;
+            }
+
+            .portfolio {
+                display: flex;
+                justify-content: center;
+            }
+
+            .portfolio img {
+                height: 175px;
+                border: 2px solid #ccc;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 10px, rgba(0, 0, 0, 0.21) 0px 0px 0px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                font-family: "Comic Sans MS", Times, serif;
+            }
+
+            #footer {
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 19px 38px, rgba(0, 0, 0, 0.21) 0px 15px 12px;
+                background-color: #98afc16b;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+            }
+
+            #col1 {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            #col2 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            #col1 a {
+                display: block;
+                font-weight: bold;
+                font-size: 18px;
+                margin: 0 10px;
+                padding: 10px;
+                color: #ccc;
+                text-decoration: none;
+            }
+
+            #col1 a:hover {
+                background-color: #79555F;
+            }
+
+            #col2 a {
+                display: block;
+                margin: 15px;
+            }
+
+            .footerIcon {
+                width: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Personal Portfolio</h1>
+        <h3 id="intro">Introduction</h3>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>Tsang Wang Ho Eric</td>
+            </tr>
+            <tr>
+                <td>Telephone no.:</td>
+                <td>59312767</td>
+            </tr>
+            <tr>
+                <td>Education:</td>
+                <td>BSc (HONS) COMPUTER SCIENCE Year 3</td>
+            </tr>
+        </table>
+        <h3 id="profile">Profile</h3>
+        <p>
+            I am a motivated and enthusiastic person who loves to face 
+            challenges. Since I was a child, I have enjoyed playing video 
+            games, and the boundless and free world of gaming has aroused 
+            my curiosity. From there, I enjoyed learning new things and 
+            taught myself programming languages through online tools to 
+            create my own worlds with programming. I have successfully 
+            created programs such as Discord Bot, Pygame, and mini-games, 
+            and the sense of accomplishment I get from them is immensely 
+            satisfying.
+        </p>
+        <div class="portfolio">
+            <img src="asset\portfolio1.png">
+        </div>
+        <p>
+            I believe that in the learning process, it is difficult to work on 
+            oneself, so it is necessary to cooperate and communicate with 
+            others. Also, I can learn by providing help to those who need it. 
+            At school, I would offer to teach my classmates programming and 
+            answer their questions about it. I will advocate and explain the 
+            principles and steps. And give patience to teach others in a way 
+            that does not give direct results.
+        </p>    
+        <div class="portfolio">
+            <img src="asset\portfolio2.png">
+        </div>     
+        <p>   
+            My attention to detail and problem-solving skills allows me to 
+            tackle complex problems with ease. For example, by thinking 
+            about the reasons behind an event, I am able to solve problems 
+            more efficiently. My positive and hardworking qualities will 
+            definitely lead me to excel in the IT industry in the future, making 
+            me an ideal candidate for any IT job.
+        </p>
+        <div id="footer">
+            <div id="col1">
+                <a href="mailto:twheric22@gmail.com">CONTACT OWNER</a>
+                <a href="home.html">HOME</a>
+            </div>
+            <div id="col2">
+                <a href="https://www.instagram.com/twh_eric/" target="_blank"><img class="footerIcon" src="asset\instagram.png" title="Instagram"></a>
+                <a href="https://www.youtube.com/@turtlegaming9819" target="_blank"><img class="footerIcon" src="asset\youtube.png" title="Youtube"></a>
+                <a href="https://join.skype.com/invite/r1m0uLu66g4a" target="_blank"><img class="footerIcon" src="asset\skype.png" title="Skype"></a>
+                <a href="https://wa.me/59312767" target="_blank"><img class="footerIcon" src="asset\whatsapp.png" title="Whatsapp"></a>
+                <a href="mailto:twheric22@gmail.com" target="_blank"><img class="footerIcon" src="asset\mail.png" title="Gmail"></a>
+            </div>
+        </div>
+    </body>
+</html>

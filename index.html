@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="indexStyle.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="banner">
+                <div id="nav-left">
+                    <div>
+                        <br><a onclick="dispMenu()">MENU</a>
+                    </div>
+                </div>
+                <div id="nav-right">
+                    <div>
+                        <a href="portfolio.html" target="iframe">My Portfolio</a>
+                    </div>
+                    <div>
+                        <a href="hobbies.html" target="iframe">My Hobbies</a>
+                    </div>
+                    <div>
+                        <a href="Work.html" target="iframe">My Work Experience</a>
+                    </div>
+                    <div>
+                        <a href="other.html" target="iframe">Other</a>
+                    </div>
+                    <div id="name">
+                        <span>Welcome to</span><br><a href="home.html" target="iframe">Tsang Wang Ho's Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menuBtn" onclick="dispMenu()">MENU</div>
+        <div id="toTop"><a href="#header"><img src="asset\up.png"></a></div>
+        <div id="menuBar">
+            <div>
+                <a href="portfolio.html" target="iframe">My Portfolio</a>
+            </div>
+            <div>
+                <a href="hobbies.html" target="iframe">My Hobbies</a>
+            </div>
+            <div>
+                <a href="Work.html" target="iframe">My Work Experience</a>
+            </div>
+            <div>
+                <a href="other.html" target="iframe">Other</a>
+            </div>
+        </div>
+        <div id="main">
+            <div id="none"></div>
+            <iframe name="iframe" src="home.html" frameborder="0" scrolling="yes"></iframe>
+            <div id="audio">
+                <audio controls>
+                    <source src="asset\Faithful Mission_ by Artificial.Music.mp3" type="audio/mpeg">
+                </audio>
+                <p><span>Faithful Mission</span><br>- by Artificial.Music</p>
+            </div>
+        </div>
+        <div id="footer">
+            © Apr 2025 - Tsang Wang Ho Eric
+        </div>
+        <script>
+            var disp = "none";
+            document.getElementById("menuBar").style.display = disp;
+            function dispMenu () {
+                if (disp == "flex") {
+                    document.getElementById("menuBar").style.display = "none";
+                    disp = "none";
+                } else {
+                    document.getElementById("menuBar").style.display = "flex";
+                    disp = "flex";
+                }
+            }
+            window.addEventListener("scroll", function() {
+                var menuBtn = document.getElementById("menuBtn");
+                var toTop = document.getElementById("toTop");
+                var position = window.scrollY;
+                if (position > 70) {
+                    menuBtn.style.display = "block";
+                } else {
+                    menuBtn.style.display = "none";
+                }
+                if (position > 200) {
+                    toTop.style.display = "block";
+                } else {
+                    toTop.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+</html>
